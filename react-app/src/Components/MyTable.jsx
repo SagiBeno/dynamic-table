@@ -1,6 +1,7 @@
 import React from "react";
 import './MyTable.css'
 
+// MyTable component
 export default class MyTable extends React.Component {
     
     state = {
