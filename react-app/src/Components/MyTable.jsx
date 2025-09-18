@@ -18,9 +18,16 @@ export default class MyTable extends React.Component {
         return <div>
             <table className="table">
                 <tbody>
+                    {/*
                     <tr>
                         <td>TODO - {JSON.stringify(this.state.rows)}</td>
                     </tr>
+                    */}
+
+                    {this.state.rows.map((word, wordIdx) =>
+                        <tr key={wordIdx}>
+                            <td>{word}</td>
+                        </tr>)}    
                 </tbody>
             </table>
         </div>
