@@ -17,7 +17,7 @@ export default class MyTable extends React.Component {
         const oldRows = this.state.rows.slice() // shallow copy
         const newRows = [...oldRows]
         newRows.splice(rowIdx, 1) // delete
-        this.setState({rows: [...newRows]}) // renderer now
+        this.setState({rows: [...newRows]}) // rerenderer now
     }
 
     render() {
