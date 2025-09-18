@@ -1,5 +1,6 @@
 import React from "react";
 import MyTable from './Components/MyTable'
+import './App.css'
 
 export default class App extends React.Component {
   render() {
