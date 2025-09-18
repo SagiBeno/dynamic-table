@@ -26,7 +26,7 @@ export default class MyTable extends React.Component {
 
                     {this.state.rows.map((word, wordIdx) =>
                         <tr key={wordIdx}>
-                            <td>{word}</td>
+                            {[...word].map((char, charIdx) => <td key={charIdx}>{char == '_' ? ' ' : char}</td>)}
                         </tr>)}    
                 </tbody>
             </table>
